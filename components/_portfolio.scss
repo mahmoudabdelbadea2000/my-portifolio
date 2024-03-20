@@ -1,0 +1,33 @@
+.portfolio {
+  .container .row:last-child {
+    gap: 10px;
+  }
+  &-heading {
+    flex: 0 0 100%;
+    width: 100%;
+    margin-bottom: 30px;
+
+    h2 {
+      color: var(--text-black-900);
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+
+  &-item {
+    flex: 0 0 calc(100% / 3 - 20px);
+    width: calc(100% / 3 - 20px);
+
+    &-inner {
+      border: 6px solid var(--bg-balck-100);
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
